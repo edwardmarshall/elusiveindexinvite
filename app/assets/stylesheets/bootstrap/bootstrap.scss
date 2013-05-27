@@ -65,5 +65,9 @@
 // Utility classes
 @import "bootstrap/utilities"; // Has to be last to override when necessary
 
+// SS Icons
+// @import "bootstrap/ss-standard";
+@import "bootstrap/ss-social";
+
 // Site Specific
 @import "bootstrap/elusive-index";

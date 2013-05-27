@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   protected
 
 	  def after_sign_in_path_for(resource)
-	    root_url
+	    congratulations_url
 	  end
 
 	  def after_sign_out_path_for(resource)

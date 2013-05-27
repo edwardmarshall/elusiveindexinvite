@@ -20,6 +20,14 @@ section {
 	color: #F00;
 }
 
+.site-alert {
+	margin-top: 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
 // HEADER
 // --------------
 .site-header {
@@ -146,4 +154,75 @@ section.mule-deer {
 
 .new_user {
 	margin-top: 50px;
+}
+
+
+// CONGRATULATIONS
+// --------------
+.share-message {
+	text-align: center;
+
+	h2 {
+		font-size: 48px;
+		line-height: 1;
+		margin: 0;
+		margin-bottom: 25px;
+	}
+
+	h3 {
+		font-family: 'edward_mediumregular';
+		font-size: 24px;
+		line-height: 1;
+		margin-bottom: 25px;
+	}
+}
+
+.share-section {
+	margin-top: 50px;
+
+	.share-item {
+		border-right: 1px solid $black;
+		text-align: center;
+
+		&.instagram {
+			border-right: 0px;
+		}
+
+		h4 {
+			font-family: 'edward_mediumregular';
+			font-size: 18px;
+			line-height: 1;
+			margin: 0;
+		}
+
+		.share-button {
+			font-size: 60px;
+			line-height: 1;
+			padding: 25px 0px;
+
+			a {
+				color: #6c3;
+
+				&:hover {
+					color: #6c3;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.insta-pic {
+		background-color: $black;
+		height: 300px;
+		margin-top: 50px;
+	}
+}
+
+.thank-you {
+	margin-top: 75px;
+	text-align: center;
+
+	strong {
+		color: $black;
+	}
 }
