@@ -12,7 +12,7 @@
 $black:                 #000 !default;
 $grayDarker:            #222 !default;
 $grayDark:              #333 !default;
-$gray:                  #555 !default;
+$gray:                  #666 !default;
 $grayLight:             #999 !default;
 $grayLighter:           #eee !default;
 $white:                 #fff !default;
@@ -33,7 +33,7 @@ $purple:                #7a43b6 !default;
 // Scaffolding
 // -------------------------
 $bodyBackground:        $white !default;
-$textColor:             $grayDark !default;
+$textColor:             $gray !default;
 
 
 // Links
@@ -55,7 +55,7 @@ $altFontFamily:         $serifFontFamily !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    normal !default;    // instead of browser default, bold
-$headingsColor:         inherit !default; // empty to use BS default, $textColor
+$headingsColor:         $grayDark !default; // empty to use BS default, $textColor
 
 
 // Component sizing

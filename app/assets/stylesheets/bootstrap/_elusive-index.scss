@@ -4,3 +4,102 @@
 
 // GENERAL STYLES
 // --------------
+section {
+	margin-top: 75px;
+}
+
+
+// HEADER
+// --------------
+.site-header {
+	margin-top: 75px;
+}
+body.home .site-header {
+	background-image: image-url("muleDeerMeasure.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 470px 439px;
+	margin-top: 25px;
+	padding-top: 439px;
+}
+
+.elusive-logo {
+	background-image: image-url("elusiveIndexLogo.png");
+	background-image: image-url("elusiveIndexLogo.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 80px;
+	position: relative;
+
+	h1 {
+		display: none;
+		visibility: hidden;
+	}
+
+	a {
+		height: 100%;
+		position: absolute;
+			top: 0;
+			left: 0;
+		width: 100%;
+	}
+}
+body.home .elusive-logo {
+	margin-top: 50px;
+}
+
+
+// FOOTER
+// --------------
+.site-footer {
+	border-top: 1px solid $black;
+	color: #999;
+	font-size: 12px;
+	line-height: 1;
+	margin-bottom: 75px;
+	margin-top: 75px;
+	padding: 10px 0px;
+}
+body.home .site-footer {
+	margin-top: 0px;
+}
+
+// HOME
+// --------------
+
+.hero-text {
+	text-align: center;
+
+	h2 {
+		font-size: 48px;
+		margin: 0;
+	}
+}
+
+.site-features {
+	margin-top: 50px;
+
+	.site-feature {
+		margin-top: 25px;
+
+		h3 {
+			font-family: 'edward_mediumregular';
+			font-size: 24px;
+			line-height: 1;
+			margin: 0;
+		}
+	}
+}
+
+.call-to-action {
+	margin-top: 75px;
+	text-align: center;
+}
+
+.app-image {
+	background-image: image-url("appImage.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 940px 922px;
+	height: 922px;
+}
