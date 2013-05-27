@@ -8,4 +8,10 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
+
+  protected
+  	# This allows us to skip the password requirement on user creation.
+  	def password_required?
+  		false
+  	end
 end
