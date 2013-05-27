@@ -7,7 +7,13 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
-  # attr_accessible :title, :body
+  
+  scope :confirmed, where('confirmed_at is not null')
+  scope :unconfirmed, where(:confirmed_at => nil)
+
+  def state
+    confirmed_at.nil? ? "INCOMPLETE" : "COMPLETE"
+  end
 
   protected
   	# This allows us to skip the password requirement on user creation.

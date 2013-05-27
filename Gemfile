@@ -32,3 +32,6 @@ gem 'jquery-rails'
 
 # User Authentication
 gem 'devise'
+
+# Active Admin
+gem 'activeadmin'

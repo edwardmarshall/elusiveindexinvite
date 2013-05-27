@@ -19,5 +19,7 @@ ElusiveIndexInvite::Application.routes.draw do
     get '/congratulations' => 'page#congratulations', as: 'congratulations'
   end
 
+  ActiveAdmin.routes(self)
+
   match "/vip" => "page#vip", as: 'vip'
 end
