@@ -15,6 +15,9 @@ ElusiveIndexInvite::Application.routes.draw do
               end
 
   devise_scope :user do
-    # Matches for Devise here.
+    get '/reminder' => 'page#reminder', as: 'reminder'
+    get '/congratulations' => 'page#congratulations', as: 'congratulations'
   end
+
+  match "/vip" => "page#vip", as: 'vip'
 end

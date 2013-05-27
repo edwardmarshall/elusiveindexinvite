@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ElusiveIndexInvite</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<title><%= content_for?(:title) ? content_for(:title) : "Elusive Index" %></title>
 
-<%= yield %>
+	<!-- META DATA -->
+	<%= csrf_meta_tags %>
+
+	<!-- STYLESHEETS -->
+	<%= stylesheet_link_tag "application", :media => "all" %>
+
+	<!-- SCRIPTS -->
+	<%= javascript_include_tag "application" %>
+
+	<!-- PAGE HEAD -->
+	<%= yield :head %>
+</head>
+<body class="<%= "#{controller.controller_name} #{@body_class}".strip %>">
+	<%= render "shared/flash_message" %>
+
+	<%= yield :header %>
+	
+	<%= yield %>
+
+	<%= yield :footer %>
 
 </body>
 </html>
