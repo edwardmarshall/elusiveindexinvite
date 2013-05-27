@@ -80,7 +80,8 @@ ElusiveIndexInvite::Application.configure do
     :enable_starttls_auto => true
   }
 
-  config.to_prepare { Devise::SessionsController.force_ssl }
-  config.to_prepare { Devise::RegistrationsController.force_ssl }
-  config.to_prepare { Devise::PasswordsController.force_ssl }
+  # To Force SSL Uncomment. We don't have a cert right now so leave this off.
+  # config.to_prepare { Devise::SessionsController.force_ssl }
+  # config.to_prepare { Devise::RegistrationsController.force_ssl }
+  # config.to_prepare { Devise::PasswordsController.force_ssl }
 end
