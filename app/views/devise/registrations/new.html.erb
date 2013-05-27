@@ -1,12 +1,31 @@
-<h2>Sign up</h2>
+<% title "Register" %>
+<section class="mule-deer">
+	<div class="container">
+		<div class="row">
+			<div class="offset5 span7">
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+				<h3>Hello! You caught us before we're ready.</h3>
+				<p>We are working hard to put finishing touches onto the Elusive Index.
+				Things are going well and it should be ready to help you archieve
+				your collection of sheds and heads very soon. <span class="highlight">If you'd like us to
+				send a reminder when we are ready, put your email below:</span></p>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+				<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+				  <%= devise_error_messages! %>
 
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
+				  <div class="row">
+				  	<div class="span5">
+				  		<%= f.email_field :email, :autofocus => true, :placeholder => "your-email@here.com", :class => "span5" %>
+				  	</div>
 
-<%= render "devise/shared/links" %>
+				  	<div class="span2">
+				  		<%= f.submit "Remind Me", :class => "btn btn-success span2" %>
+				  	</div>
+				  </div>
+				  
+				<% end %>
+
+			</div>
+		</div>
+	</div>
+</section>

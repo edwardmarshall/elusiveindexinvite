@@ -13,3 +13,43 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+
+if($('body').hasClass('reminder')) {
+		var timer = $('.clock');
+
+		var leadingZero = function(n) {
+			if (n < 10 && n >= 0)
+				return '0' + n;
+			else
+				return n;
+		};
+
+		var minutes = 5;
+		var seconds = 00;
+
+		setInterval(function() {
+
+			var m = $('.min', timer),
+				s = $('.sec', timer);
+
+			if (seconds == 0) {
+				minutes--;
+				seconds = 59;
+			} else {
+				seconds--;
+			}
+
+			if (minutes == 0 && seconds == 0) {
+				timer.html("0:00");
+			}
+
+			m.text(minutes);
+			s.text(leadingZero(seconds));
+
+		}, 1000);
+
+	}
+
+});
