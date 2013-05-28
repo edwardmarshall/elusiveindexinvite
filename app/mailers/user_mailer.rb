@@ -3,6 +3,6 @@ class UserMailer < ActionMailer::Base
 
   def congratulations_email(user)
   	@user = user
-  	mail(:to => @user.email, :subject => "Your on the list!")
+  	mail(:to => @user.email, :subject => "You're on the list!")
   end
 end
