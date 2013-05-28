@@ -41,6 +41,14 @@ Again for security reasons the `SES_USERNAME`, `SES_PASSWORD` are not included h
 Once the `.env` and `Procfile` are setup, you may run the server with the following command:
 ```foreman start```
 
+### Assets
+
+Assets should be precompiled before pushing to Heroku. This makes a faster push. Use the following command to compile assets for production:
+
+```
+RAILS_ENV=production bundle exec rake assets:precompile
+```
+
 ## Questions
 
 Send all application questions to Eric Taylor at [eric@edwardmarshall.co](mailto://eric@edwardmarshall.co).
