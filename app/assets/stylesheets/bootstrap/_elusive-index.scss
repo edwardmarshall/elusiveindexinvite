@@ -47,8 +47,10 @@ body.home .site-header {
 	background-image: image-url("elusiveIndexLogo.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 80px;
+	height: 27px;
+	margin: 0 auto;
 	position: relative;
+	width: 300px;
 
 	h1 {
 		display: none;
@@ -79,7 +81,7 @@ body.home .elusive-logo {
 	margin-top: 75px;
 	padding: 10px 0px;
 }
-body.home .site-footer,
+
 body.register .site-footer,
 body.reminder .site-footer {
 	margin-top: 0px;
@@ -104,6 +106,7 @@ body.reminder .site-footer {
 		margin-top: 25px;
 
 		h3 {
+			color: #FF6600;
 			font-family: 'edward_mediumregular';
 			font-size: 24px;
 			line-height: 1;
@@ -115,6 +118,13 @@ body.reminder .site-footer {
 .call-to-action {
 	margin-top: 75px;
 	text-align: center;
+
+	span {
+		display: block;
+		font-family: 'marshall_book';
+		font-size: 30px;
+		margin-bottom: 25px;
+	}
 }
 
 .app-image {
